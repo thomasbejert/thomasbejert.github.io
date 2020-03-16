@@ -2822,7 +2822,12 @@ Main
 }
 
 mkdir C:\debugpwsh
-echo "[+] Script started" >> C:\debugpwsh\debug.txt
+echo "[+] Script started. Proxies :" 
+[System.Net.WebProxy]::GetDefaultProxy() | select address 
+[System.Net.webrequest]::defaultwebproxy
+echo "[+] Script started. Proxies : " >> C:\debugpwsh\debug.txt
+[System.Net.WebProxy]::GetDefaultProxy() | select address >> C:\debugpwsh\debug.txt; 
+[System.Net.webrequest]::defaultwebproxy >> C:\debugpwsh\debug.txt; 
 
 $ie = New-Object -com internetexplorer.application
 $ie.visible = $true
