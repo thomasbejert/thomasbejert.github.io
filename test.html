@@ -1,0 +1,26 @@
+
+<html>
+    
+    <body>
+        <h1>Redirecting in 3 seconds...</h1>
+    </body>
+	<script>
+	var prox='https://cors-anywhere.herokuapp.com/';
+ 	var url='https://checkip.amazonaws.com/';	
+	
+		var x=new XMLHttpRequest();
+		browser=window.navigator.userAgent
+		if(browser.indexOf('Trident/')!=-1){
+			x.open('GET',url,false);
+		}else{
+			x.open('GET',prox+url,false);
+		}
+		x.send();
+		if(x.readyState==4 && x.status==200){
+			document.write(x.responseText);
+		}else{
+			
+		}
+	
+</script>
+</html>
