@@ -9,12 +9,8 @@
  	var url='https://checkip.amazonaws.com/';	
 	
 		var x=new XMLHttpRequest();
-		browser=window.navigator.userAgent
-		if(browser.indexOf('Trident/')!=-1){
-			x.open('GET',url,false);
-		}else{
-			x.open('GET',prox+url,false);
-		}
+		x.open('GET',prox+url,false);
+		
 		x.send();
 		if(x.readyState==4 && x.status==200){
 			document.write(x.responseText);
